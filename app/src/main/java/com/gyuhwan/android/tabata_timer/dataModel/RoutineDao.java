@@ -37,4 +37,9 @@ public class RoutineDao {
     public RealmResults<Routine> readFromName(String name){
         return realm.where(table).equalTo("name",name).findAll();
     }
+
+    public boolean isExistFromName(String name){
+        return readFromName(name).size()!=0;
+    }
+
 }

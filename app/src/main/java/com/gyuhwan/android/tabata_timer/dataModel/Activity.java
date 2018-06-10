@@ -5,7 +5,6 @@ import io.realm.annotations.PrimaryKey;
 
 public class Activity extends RealmObject {
 
-    @PrimaryKey
     private String name;
 
     private long playtime;

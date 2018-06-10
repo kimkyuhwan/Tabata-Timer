@@ -27,4 +27,7 @@ public class RoutineViewModel extends ViewModel {
     public void createRoutine(Routine routine){
         routineDao.create(routine);
     }
+
+    public boolean isExistFromName(String name){ return routineDao.isExistFromName(name);}
+
 }

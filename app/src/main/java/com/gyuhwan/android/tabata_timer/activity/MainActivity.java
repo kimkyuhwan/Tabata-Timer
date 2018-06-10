@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.add_btn:
+                Intent add_intent = new Intent(getApplicationContext(), AddActivity.class);
+                startActivity(add_intent);
                 break;
             case R.id.back_btn:
                 onFragmentChange("main");
