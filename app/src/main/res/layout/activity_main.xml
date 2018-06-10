@@ -4,15 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity"
+    android:background="@color/my_white"
+    >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/title_bar"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Tabata"
+        android:background="#000"
+        android:fontFamily="@font/beautiful_people"
+        android:textColor="@color/my_white"
+        android:textSize="20dp"
+        android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
+    <ImageButton
+        android:layout_margin="3dp"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/add_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <ImageButton
+        android:layout_margin="3dp"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/setting_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <FrameLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
 </android.support.constraint.ConstraintLayout>
